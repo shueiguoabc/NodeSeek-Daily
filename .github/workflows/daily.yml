@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '00 16 * * *'  # UTC 16:00，即北京时间 00:00
+    - cron: '00 17 * * *'  # UTC 16:00，即北京时间 00:00
   workflow_dispatch: # <--- 添加这一行即可
 
 jobs:
