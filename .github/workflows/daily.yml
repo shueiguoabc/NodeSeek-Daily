@@ -6,6 +6,7 @@ on:
       - main
   schedule:
     - cron: '00 16 * * *'  # UTC 16:00，即北京时间 00:00
+  workflow_dispatch: # <--- 添加这一行即可
 
 jobs:
   run-nodeseek-daily:
@@ -14,7 +15,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
